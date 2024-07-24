@@ -4,3 +4,6 @@ registra los cambios en archivos a lo largo del tiempo, permite a múltiples usu
 
 # ¿ Que diferencia hay entre repositorio local y remoto ?
 R: La principal difernecia es que el remoto esta en la Nube y el local esta en el PC  
+
+# ¿ Mencione 3 diferencias entre git y git hub ?
+R: Git hub es una pagina web y git es un programa, Git hub, git no requiere internet para su uso básico y git hub si y por ultimo git hub no requiere instalación, es accesible a través de un navegador web.
