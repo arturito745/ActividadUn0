@@ -7,3 +7,10 @@ R: La principal difernecia es que el remoto esta en la Nube y el local esta en e
 
 # ¿ Mencione 3 diferencias entre git y git hub ?
 R: Git hub es una pagina web y git es un programa, Git hub, git no requiere internet para su uso básico y git hub si y por ultimo git hub no requiere instalación, es accesible a través de un navegador web.
+
+# ¿ Area de trabajo, Area de preparacion y Directorio git. en que consisten ?
+R: Área de Trabajo, Qué es: Es el directorio del proyecto donde editas y modificas archivos, Función: Realizar cambios en los archivos del proyecto.
+   Área de Preparación, Qué es: Es una zona intermedia para preparar los cambios que serán confirmados, Función: Seleccionar y organizar los cambios para el próximo 
+   commit.
+   Directorio Git Qué es: Es el repositorio donde se almacena toda la información y el historial de Git,Función: Guardar los datos y metadatos del control de 
+   versiones.
