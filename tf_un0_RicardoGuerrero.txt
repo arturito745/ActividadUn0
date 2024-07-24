@@ -14,3 +14,5 @@ R: Área de Trabajo, Qué es: Es el directorio del proyecto donde editas y modif
    commit.
    Directorio Git Qué es: Es el repositorio donde se almacena toda la información y el historial de Git,Función: Guardar los datos y metadatos del control de 
    versiones.
+# ¿ Para que se utilizan las ramas en git ?
+R:Las ramas en Git se utilizan para desarrollar nuevas funcionalidades, corregir errores y experimentar de manera aislada sin afectar la rama principal del proyecto. Facilitan el trabajo en paralelo entre varios desarrolladores.
