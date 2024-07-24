@@ -1,1 +1,3 @@
-
+# ¿Que es un sistema de control de versiones ?
+R: 
+registra los cambios en archivos a lo largo del tiempo, permite a múltiples usuarios colaborar en un proyecto sin. Facilita la gestión del historial, la recuperación de versiones anteriores y hace que en cada cambio tenga una descripcion de lo elaborado.
