@@ -1,3 +1,6 @@
 # ¿Que es un sistema de control de versiones ?
 R: 
 registra los cambios en archivos a lo largo del tiempo, permite a múltiples usuarios colaborar en un proyecto sin. Facilita la gestión del historial, la recuperación de versiones anteriores y hace que en cada cambio tenga una descripcion de lo elaborado.
+
+# ¿ Que diferencia hay entre repositorio local y remoto ?
+R: La principal difernecia es que el remoto esta en la Nube y el local esta en el PC  
