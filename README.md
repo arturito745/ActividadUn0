@@ -22,3 +22,6 @@ El programa tiene dos funciones: `setup()`, que configura el pin del LED como sa
 Los eventos del programa incluyen el inicio, donde se configura el pin del LED, y la medición continua del tiempo en `loop()`. Según los intervalos de tiempo (1, 2, o 3 segundos), se generan eventos que imprimen los mensajes `"SOS1"`, `"SOS2"`, o `"SOS3"` en el monitor serial.
 #### ¿Cuáles son las acciones?
 Las acciones del programa incluyen configurar el pin del LED como salida, medir el tiempo transcurrido y, al alcanzar los intervalos de 1, 2 y 3 segundos, imprimir `"SOS1"`, `"SOS2"`, o `"SOS3"` en el monitor serial.
+### Ejercicio 9: tareas concurrentes (evaluación formativa)
+` REALIZADO `
+### Ejercicio 10: monitor serial
