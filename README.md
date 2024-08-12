@@ -15,4 +15,10 @@ Sí, el mensaje Serial.print("Task1States::WAIT_TIMEOUT\n"); se imprime dentro d
 Leido y comprendido 
 #### ¿Para qué sirve? (millis)
 `millis()` da el tiempo en milisegundos desde el inicio del programa.
-
+### Ejercicio 8: retrieval practice (evaluación formativa)
+#### ¿Cuáles son los estados del programa?
+El programa tiene dos funciones: `setup()`, que configura el pin del LED como salida, y `loop()`, que se ejecuta en un ciclo continuo. En `loop()`, se mide el tiempo transcurrido y, según el intervalo (1, 2 o 3 segundos), se imprime "SOS1", "SOS2" o "SOS3" en el monitor serial. Sin embargo, debido a que el tiempo no se actualiza, todos los mensajes se imprimen cada vez que se cumplen 3 segundos. Para corregirlo, se debería actualizar el tiempo después de cada mensaje.
+#### ¿Cuáles son los eventos?
+Los eventos del programa incluyen el inicio, donde se configura el pin del LED, y la medición continua del tiempo en `loop()`. Según los intervalos de tiempo (1, 2, o 3 segundos), se generan eventos que imprimen los mensajes `"SOS1"`, `"SOS2"`, o `"SOS3"` en el monitor serial.
+#### ¿Cuáles son las acciones?
+Las acciones del programa incluyen configurar el pin del LED como salida, medir el tiempo transcurrido y, al alcanzar los intervalos de 1, 2 y 3 segundos, imprimir `"SOS1"`, `"SOS2"`, o `"SOS3"` en el monitor serial.
