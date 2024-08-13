@@ -56,3 +56,7 @@ Se lee el contenido de una variable usando el puntero con el operador de desrefe
 Se escribe en una variable usando el puntero con el operador de desreferenciación (*). Ejemplo: *pvar = 10;.
 
 ### Ejercicio 13: punteros y funciones
+Realizado 
+### Ejercicio 14: retrieval practice (evaluación formativa)
+Realizado. Archivo almacenado en el repositorio remoto 
+#### Ejercicio 15: punteros y arreglos
