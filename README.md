@@ -39,4 +39,20 @@ La relacion que tienen es que cada letra, cada simbolo es que esta representada 
 El `0a` al final del mensaje es el código ASCII para el salto de línea (newline), que se utiliza para mover el cursor a la siguiente línea en la salida de texto.
 #### ¿Tiene sentido esto?
 Sí, tiene sentido. Leer el dato después de verificar su disponibilidad es necesario para liberar espacio, evitando que el sistema crea que siempre hay datos disponibles y bloqueando nuevos datos.
-#### Ejercicio 12: punteros
+### Ejercicio 12: punteros
+#### ¿Cómo se declara un puntero?
+Se declara un puntero especificando el tipo de dato al que apunta seguido de un asterisco (*). Ejemplo: uint32_t *pvar;.
+
+##### ¿Cómo se define un puntero? (cómo se inicializa)
+Se define un puntero asignándole la dirección de una variable usando el operador de dirección (&). Ejemplo: pvar = &var;.
+
+#### ¿Cómo se obtiene la dirección de una variable?
+Se obtiene la dirección de una variable usando el operador de dirección (&). Ejemplo: &var.
+
+#### ¿Cómo se puede leer el contenido de una variable por medio de un puntero?
+Se lee el contenido de una variable usando el puntero con el operador de desreferenciación (*). Ejemplo: *pvar.
+
+#### ¿Cómo se puede escribir el contenido de una variable por medio de un puntero?
+Se escribe en una variable usando el puntero con el operador de desreferenciación (*). Ejemplo: *pvar = 10;.
+
+### Ejercicio 13: punteros y funciones
