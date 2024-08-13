@@ -59,4 +59,18 @@ Se escribe en una variable usando el puntero con el operador de desreferenciaci�
 Realizado 
 ### Ejercicio 14: retrieval practice (evaluación formativa)
 Realizado. Archivo almacenado en el repositorio remoto 
-#### Ejercicio 15: punteros y arreglos
+### Ejercicio 15: punteros y arreglos
+Claro, aquí tienes una explicación más detallada y diferenciada:
+
+Qué hace: La función `processData` toma un arreglo de caracteres numéricos, calcula la suma de sus valores reales y almacena el resultado en una variable.
+
+Cómo funciona:La constante `0x30` es el valor hexadecimal del carácter `'0'` en la codificación ASCII. Restar `0x30` de cada carácter numérico convierte el carácter en su valor entero correspondiente.
+
+Pruebas:** Para probar la función, debes proporcionar un arreglo de caracteres numéricos como `{'1', '2', '3', '4', '5'}`. Luego, verifica que el resultado de la suma sea correcto, que en este caso debería ser 15.
+
+#### ¿Por qué es necesario declarar rxData static? y si no es static ¿Qué pasa? ESTO ES IMPORTANTE, MUCHO.
+Al declarar rxData como static, se conserva su valor entre llamadas a la función task1. Si no fuera static, se reiniciaría a cada llamada de task1, perdiendo los datos almacenados.
+#### dataCounter se define static y se inicializa en 0. Cada vez que se ingrese a la función loop dataCounter se inicializa a 0? ¿Por qué es necesario declararlo static?
+`dataCounter` debe ser `static` para mantener su valor entre llamadas a `task1`, permitiendo acumular correctamente el número de bytes leídos. Sin `static`, el contador se reiniciaría a 0 en cada llamada.
+#### Finalmente, la constante 0x30 en (pData[i] - 0x30) ¿Por qué es necesaria?
+La constante `0x30` es el valor ASCII del carácter `'0'`. Restar `0x30` convierte los caracteres numéricos (como `'5'`) en números reales (como 5).
