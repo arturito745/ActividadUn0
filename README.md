@@ -56,10 +56,15 @@ Se lee el contenido de una variable usando el puntero con el operador de desrefe
 Se escribe en una variable usando el puntero con el operador de desreferenciación (*). Ejemplo: *pvar = 10;.
 
 ### Ejercicio 13: punteros y funciones
+
 Realizado 
+
 ### Ejercicio 14: retrieval practice (evaluación formativa)
+
 Realizado. Archivo almacenado en el repositorio remoto 
+
 ### Ejercicio 15: punteros y arreglos
+
 Claro, aquí tienes una explicación más detallada y diferenciada:
 
 Qué hace: La función `processData` toma un arreglo de caracteres numéricos, calcula la suma de sus valores reales y almacena el resultado en una variable.
@@ -74,3 +79,25 @@ Al declarar rxData como static, se conserva su valor entre llamadas a la funció
 `dataCounter` debe ser `static` para mantener su valor entre llamadas a `task1`, permitiendo acumular correctamente el número de bytes leídos. Sin `static`, el contador se reiniciaría a 0 en cada llamada.
 #### Finalmente, la constante 0x30 en (pData[i] - 0x30) ¿Por qué es necesaria?
 La constante `0x30` es el valor ASCII del carácter `'0'`. Restar `0x30` convierte los caracteres numéricos (como `'5'`) en números reales (como 5).
+
+### Ejercicio 16: análisis del api serial (investigación: hipótesis-pruebas)
+
+#### ¿Qué pasa cuando hago un [Serial.available()]?
+`Serial.available()` devuelve el número de bytes disponibles en el buffer de recepción. Si hay datos, devuelve un valor mayor que 0; si no hay datos, devuelve 0.
+#### ¿Qué pasa cuando hago un [Serial.read()]?
+`Serial.read()` lee y devuelve el siguiente byte disponible del buffer de recepción. Si no hay datos, devuelve -1. Cada llamada elimina el byte leído del buffer.
+#### ¿Qué pasa cuando hago un Serial.read() y no hay nada en el buffer de recepción?
+Si llamas a Serial.read() cuando no hay datos disponibles en el buffer, devuelve -1. Esto indica que no hay datos para leer en ese momento.
+#### ¿Cuántos datos lee Serial.read()?
+Serial.read() lee un solo byte de datos del buffer de recepción en cada llamada. Si necesitas leer más de un byte, tendrás que hacer múltiples llamadas a Serial.read().
+#### ¿Y si quiero leer más de un dato? No olvides que no se pueden leer más datos de los disponibles en el buffer de recepción porque no hay más datos que los que tenga allí.
+Para leer más de un byte, necesitas llamar a Serial.read() repetidamente en un bucle 
+#### ¿Qué pasa si te envían datos por serial y se te olvida llamar Serial.read()?
+Si olvidas llamar a `Serial.read()`, el buffer se llenará con nuevos datos y los antiguos quedarán sin leer o se sobrescribirán, lo que puede causar pérdida de datos y errores.
+
+### Ejercicio 17: buffer de recepción
+
+#### ¿Qué escenarios podría tener en este caso?
+Si hay 2 bytes disponibles, se leen en `dataRx1` y `dataRx2`, mientras que `dataRx3` queda sin valor definido porque no hay más datos. Si hay más de 2 bytes, se leen los primeros 2, pero `dataRx3` no se asignará si no hay un tercer byte disponible, y los datos adicionales permanecen en el buffer. Si hay menos de 2 bytes, el `if` no se cumple, no se leen datos, y `dataRx1`, `dataRx2`, y `dataRx3` no se asignan.
+
+### Ejercicio 18: retrieval practice (evaluación formativa)
