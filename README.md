@@ -25,3 +25,18 @@ Las acciones del programa incluyen configurar el pin del LED como salida, medir 
 ### Ejercicio 9: tareas concurrentes (evaluación formativa)
 ` REALIZADO `
 ### Ejercicio 10: monitor serial
+Realizado 
+### Ejercicio 11: realiza algunas pruebas
+#### 0a ¿A qué letra corresponde?
+0a significa salto de linea 
+#### ¿Por qué enviaste la letra con el botón send? ¿Qué evento verifica si ha llegado algo por el puerto serial?
+Porque send es enviar es lo mas logico, El evento que verifica si ha llegado algo por el puerto serial es la función `Serial.available()`. Esta función devuelve el número de bytes disponibles en la entrada del puerto serial. Si `Serial.available()` es mayor que 0, significa que hay datos listos para ser leídos.
+#### Nota que luego de la r, abajo, hay un número. ¿Qué es ese número?
+El número hexadecimal `72` representa el valor decimal `114`, que en la tabla ASCII corresponde al carácter `'r'`. En la conversión de datos, `72` se usa para codificar el carácter `'r'` en formato binario para transmisión y almacenamiento.
+#### ¿Qué relación encuentras entre las letras y los números?
+La relacion que tienen es que cada letra, cada simbolo es que esta representada con un numero.
+#### ¿Qué es el 0a al final del mensaje y para qué crees que sirva?
+El `0a` al final del mensaje es el código ASCII para el salto de línea (newline), que se utiliza para mover el cursor a la siguiente línea en la salida de texto.
+#### ¿Tiene sentido esto?
+Sí, tiene sentido. Leer el dato después de verificar su disponibilidad es necesario para liberar espacio, evitando que el sistema crea que siempre hay datos disponibles y bloqueando nuevos datos.
+#### Ejercicio 12: punteros
