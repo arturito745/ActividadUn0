@@ -101,3 +101,4 @@ Si olvidas llamar a `Serial.read()`, el buffer se llenará con nuevos datos y lo
 Si hay 2 bytes disponibles, se leen en `dataRx1` y `dataRx2`, mientras que `dataRx3` queda sin valor definido porque no hay más datos. Si hay más de 2 bytes, se leen los primeros 2, pero `dataRx3` no se asignará si no hay un tercer byte disponible, y los datos adicionales permanecen en el buffer. Si hay menos de 2 bytes, el `if` no se cumple, no se leen datos, y `dataRx1`, `dataRx2`, y `dataRx3` no se asignan.
 
 ### Ejercicio 18: retrieval practice (evaluación formativa)
+### Trabajo Final Realizado con Juan Sebastian Marin
